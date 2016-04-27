@@ -1,7 +1,8 @@
 module.exports = {
     setText: function (msg, pos, clear) {
-        if (clear == undefined)
+        if (clear == undefined) {
             clear = true;
+        }
         if (clear) {
             LCDqueue.push({func: 'home'});
             LCDqueue.push({func: 'clear'});
@@ -42,8 +43,9 @@ module.exports = {
                 brightness = 1;
                 clearInterval(intervalBrightness);
             }
-            else
-				brightness += 0.0025;
+            else {
+                brightness += 0.0025;
+            }
             LCD.setColor(color.r * brightness, color.g * brightness, color.b * brightness);
         }, 1);
     },
@@ -53,8 +55,9 @@ module.exports = {
                 brightness = 0;
                 clearInterval(intervalBrightness);
             }
-            else
+            else {
                 brightness -= 0.0025;
+            }
             LCD.setColor(color.r * brightness, color.g * brightness, color.b * brightness);
         }, 2);
     },
