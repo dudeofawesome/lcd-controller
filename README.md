@@ -11,8 +11,10 @@ A node module to control the Grove-LCD RGB Backlight Panel
 * `msg` `(string)`
   * String to write to display
 * `pos` `({x: number, y: number})`
+  * Default: `{x: 0, y: 0}`
   * Position to start writing string
 * `clear` `(boolean)`
+  * Default: `true`
   * Whether or not the display should be cleared before writing string
 
 ### `clearText()`
