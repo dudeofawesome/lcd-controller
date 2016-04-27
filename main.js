@@ -16,6 +16,9 @@ module.exports = {
     clearText: function () {
         LCDqueue.push({func: 'clear'});
     },
+    getColor: function () {
+        return color;
+    },
     setColor: function (r, g, b) {
         toColor = {r:r, g:g, b:b};
 
@@ -60,6 +63,9 @@ module.exports = {
             }
             LCD.setColor(color.r * brightness, color.g * brightness, color.b * brightness);
         }, 2);
+    },
+    getBrightness: function () {
+        return brightness;
     },
     setBrightness: function (b) {
         brightness = b;
