@@ -9,6 +9,7 @@
   "engines": {
     "node": ">=0.10.38"
   },
+  "os" : ["linux"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dudeofawesome/lcd-controller.git"
@@ -23,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/dudeofawesome/lcd-controller/issues"
   },
-  "homepage": "https://github.com/dudeofawesome/lcd-controller#readme"
+  "homepage": "https://github.com/dudeofawesome/lcd-controller#readme",
+  "dependencies": {
+    "jsupm_i2clcd": "^0.4.1"
+  }
 }
